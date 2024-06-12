@@ -28,6 +28,10 @@
   #define MAX_REQUEST_BODY_SIZE (16*1024) //16K
 #endif
 
+#ifndef HTTPD_STACK_SIZE
+  #define HTTPD_STACK_SIZE (4*1024) //4K
+#endif
+
 #ifdef ARDUINO
   #include <Arduino.h>
   #include <ArduinoTrace.h>
